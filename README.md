@@ -21,6 +21,7 @@ docker run --detach \
   --publish 8000:8000 \
   --volumes-from swarm-data \
   --env TOKEN=$SECRET \
+  --env DOCKER_HOST=$DOCKER_HOST \
   --env DOCKER_CERT_PATH=/etc/docker/cert.pem \
   --env DOCKER_CA_CERT_PATH=/etc/docker/ca.pem \
   --env DOCKER_KEY_PATH=/etc/docker/key.pem \
